@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="pt-br" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<script src="Scripts/angular.min.js"></script>
+<script src="Scripts/angular-route.min.js"></script>
+<base href="/">
+</head>
+<body>
+<ul class="nav nav-tabs">
+<li ng-class="{active: activetab == '/'}"><a href="#/home">Home</a></li>
+<li ng-class="{active: activetab == '/sobre'}"><a href="#/sobre">Sobre</a></li>
+<li ng-class="{active: activetab == '/contato'}"><a href="#/contato">Contato</a></li>
+</ul>
+<div ng-view></div>
+<script src="app/app.js"></script>
+<script src="app/controllers/controllers.js"></script>
+</body>
+</html>
